@@ -70,7 +70,7 @@ export default function Home() {
         </Link>
         <Link 
           rel="icon"
-          href="https://github.com/ashleigh-kelley"
+          href="https://github.com/ashleighkelley"
         >
           <Image 
             src="/images/github-mark-white.png"
