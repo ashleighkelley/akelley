@@ -1,2 +1,2 @@
 # akelley
-personal website
+Personal website built with NextJS
