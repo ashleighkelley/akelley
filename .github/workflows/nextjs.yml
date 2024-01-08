@@ -5,8 +5,8 @@
 name: Deploy Next.js site to Pages
 
 env:
-  LASTFM_API_KEY: '45a6315b8bc4edfad5e1fb9621c943e0'
-  NEXT_PUBLIC_BASE_URL:https://ashleighkelley.github.io/akelley
+  LASTFM_API_KEY: 45a6315b8bc4edfad5e1fb9621c943e0
+  NEXT_PUBLIC_BASE_URL: https://ashleighkelley.github.io/akelley
 
 on:
   # Runs on pushes targeting the default branch
