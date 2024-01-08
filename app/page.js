@@ -7,7 +7,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center bg-dark-blue">
       <div className="my-20">
         <Image 
-          src="/images/Ashleigh Kelley(2).png"
+          src={`${process.env.NEXT_PUBLIC_BASE_URL}images/Ashleigh Kelley(2).png`}
           width={400}
           height={400} 
           alt="Ashleigh Kelley"
@@ -62,7 +62,7 @@ export default function Home() {
           href="https://www.linkedin.com/in/ashleighlkelley"
         >
           <Image 
-            src="/images/LI-In-Bug.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_URL}images/LI-In-Bug.png`}
             width={35}
             height={35} 
             alt="LinkedIn"
@@ -73,7 +73,7 @@ export default function Home() {
           href="https://github.com/ashleighkelley"
         >
           <Image 
-            src="/images/github-mark-white.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_URL}images/github-mark-white.png`}
             width={30}
             height={30} 
             alt="GitHub"

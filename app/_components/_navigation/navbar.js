@@ -12,7 +12,7 @@ const Navbar = () => {
             href="/"
           >
             <Image 
-              src="/images/Ashleigh Kelley.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_URL}images/Ashleigh Kelley.png`}
               width={250}
               height={250} 
               alt="Ashleigh Kelley"
