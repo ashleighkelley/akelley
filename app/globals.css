@@ -15,4 +15,20 @@
 body {
   color: (var(--foreground-rgb));
   background: var(--foreground-rgb);
+  font-size: 90%;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 125%;
+  color: #C2DFE3;
+  opacity: 50;
+  text-decoration: #F47E3E underline;
+  padding-top:1rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 110%;
+  padding-top:0.5rem;
 }

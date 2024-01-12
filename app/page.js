@@ -28,7 +28,7 @@ export default function Home() {
       <div className="my-20 grid text-center lg:max-w-5xl lg:w-50 lg:mb-10 lg:grid-cols-2 lg:text-left space-x-4">
         <Link
           href="/experience"
-          className="group rounded-lg border px-5 py-4 hover:border-orange"
+          className="group rounded-lg border border-blue-grey border-opacity-50 px-5 py-4 hover:border-orange"
         >
           <h2 className={`mb-3 text-2xl font-semibold text-blue-grey`}>
             Business{' '}
@@ -43,7 +43,7 @@ export default function Home() {
 
         <Link
           href="/interests"
-          className="group rounded-lg border px-5 py-4 hover:border-orange"
+          className="group rounded-lg border border-blue-grey border-opacity-50 px-5 py-4 hover:border-orange"
         >
           <h2 className={`mb-3 text-2xl font-semibold text-blue-grey`}>
             Casual{' '}

@@ -1,16 +1,18 @@
+'use client'
 import React from "react";
 import Link from "next/link";
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   return (
     <>
-      <div className="w-full h-10 sticky top-10 bg-dark-blue">
-        <div className="container mx-auto px-4 h-full">
+      <div className="sticky bg-dark-blue mx-10">
+        <div className="container h-full">
           <div className="flex justify-between items-center h-full">
-          <Link 
-            href="/"
-          >
+          <Link href="/">
             <Image 
               src={`${process.env.NEXT_PUBLIC_BASE_URL}images/Ashleigh Kelley.png`}
               width={250}
@@ -18,19 +20,25 @@ const Navbar = () => {
               alt="Ashleigh Kelley"
             />
             </Link>
-            <ul className="hidden md:flex gap-x-6 text-white">
-              <li>
+            <ul className="hidden md:flex gap-x-6 text-sky-blue">
+              <li className="hover:text-orange">
                 <Link href="/">
                   <p>About</p>
                 </Link>
               </li>
-              <li>
-                <Link href="/experience">
+              <li className="hover:text-orange">
+                <Link 
+                  className={pathname == "/experience" ? "underline decoration-orange decoration-2" : ""}
+                  href="/experience"
+                >
                   <p>Experience</p>
                 </Link>
               </li>
-              <li>
-                <Link href="/interests">
+              <li className="hover:text-orange">
+                <Link 
+                  className={pathname == "/interests" ? "underline decoration-orange decoration-2" : ""}
+                  href="/interests"
+                >
                   <p>Interests</p>
                 </Link>
               </li>
