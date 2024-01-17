@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import '@/app/globals.css'
+import 'react-multi-carousel/lib/styles.css'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-dark-blue">
+    <main className="flex min-h-screen flex-col items-center">
       <div className="my-20">
         <Image 
           src={`${process.env.NEXT_PUBLIC_BASE_URL}images/Ashleigh Kelley(2).png`}
