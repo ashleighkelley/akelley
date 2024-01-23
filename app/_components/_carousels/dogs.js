@@ -1,7 +1,22 @@
+'use client'
 import Carousel from 'react-multi-carousel';
+import {Accordion, AccordionItem} from "@nextui-org/react";
 
 const Dogs = () => {
-    return (
+  const accordionStyling = {
+    base: "py-0 w-full",
+    title: "text-sm text-blue-grey opacity-50 font-semibold",
+    trigger: "px-2 py-0 data-[hover=true]:bg-default-100 rounded-lgflex items-center",
+    indicator: "text-orange",
+    content: "text-small px-2",
+  };
+
+  return (
+    <Accordion 
+      showDivider={false}
+      itemClasses={accordionStyling}
+    >
+      <AccordionItem key="1" aria-label="dogs" title="Release the hounds!">
         <Carousel
           arrows
           centerMode={false}
@@ -107,7 +122,9 @@ const Dogs = () => {
             }}
           />
         </Carousel>
-    );
+      </AccordionItem>
+    </Accordion>
+  );
 };
 
 export default Dogs;
