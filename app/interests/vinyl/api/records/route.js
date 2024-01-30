@@ -4,7 +4,7 @@ export async function GET() {
 
     try {
 
-      const res = await fetch(`http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=shleeeeigh&api_key=${process.env.LASTFM_API_KEY}&format=json`);
+      const res = await fetch(`https://api.discogs.com/users/kelleya92/collection/folders/0/releases`);
       const data = await res.json();
       
       return NextResponse.json({ data: data },{status:201});

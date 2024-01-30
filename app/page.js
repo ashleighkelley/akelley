@@ -6,7 +6,7 @@ import 'react-multi-carousel/lib/styles.css'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <div className="my-20">
+      <div className="my-10 lg:my-20">
         <Image 
           src={`${process.env.NEXT_PUBLIC_BASE_URL}images/Ashleigh Kelley(2).png`}
           width={400}
@@ -26,7 +26,7 @@ export default function Home() {
            to problem-solving, Ashleigh has contributed to the success of numerous projects and has become a valuable asset in the 
            ever-evolving landscape of software development.</p>
       </div>
-      <div className="my-20 grid text-center lg:max-w-5xl lg:w-50 lg:mb-10 lg:grid-cols-2 lg:text-left space-x-4">
+      <div className="my-5 grid grid-cols-1 space-y-2 text-center lg:my-20 lg:max-w-5xl lg:w-50 lg:mb-10 lg:grid-cols-2 lg:text-left lg:space-x-4 lg:space-y-0">
         <Link
           href="/experience"
           className="group rounded-lg border border-blue-grey border-opacity-50 px-5 py-4 hover:border-orange"
@@ -57,7 +57,7 @@ export default function Home() {
           </p>
         </Link>
       </div>
-      <div className='flex space-x-4'>
+      <div className='flex space-x-4 pb-5'>
         <Link 
           rel="icon"
           href="https://www.linkedin.com/in/ashleighlkelley"

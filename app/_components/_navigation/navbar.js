@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="sticky mx-10">
+      <div className="sticky lg:mx-10">
         <div className="container h-full">
           <div className="flex justify-between items-center h-full">
           <Link href="/">

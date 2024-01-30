@@ -5,10 +5,10 @@ import {Accordion, AccordionItem} from "@nextui-org/react";
 const Dogs = () => {
   const accordionStyling = {
     base: "py-0 w-full",
-    title: "text-sm text-blue-grey opacity-50 font-semibold",
-    trigger: "px-2 py-0 data-[hover=true]:bg-default-100 rounded-lgflex items-center",
+    title: "text-blue-grey opacity-50 font-semibold",
+    trigger: "px-2 py-0 data-[hover=true]:bg-default-100 rounded-lgflex",
     indicator: "text-orange",
-    content: "text-small px-2",
+    content: "text-sm px-2",
   };
 
   return (
@@ -62,63 +62,63 @@ const Dogs = () => {
             src={`${process.env.NEXT_PUBLIC_BASE_URL}images/IMG_1085.JPEG`}
             style={{
               display: 'block',
-              height: '100%',
+              height: '90%',
               margin: 'auto',
-              width: '100%'
+              width: '80%'
             }}
           />
           <img
             src={`${process.env.NEXT_PUBLIC_BASE_URL}images/IMG_1033.JPEG`}
             style={{
               display: 'block',
-              height: '100%',
+              height: '90%',
               margin: 'auto',
-              width: '100%'
+              width: '80%'
             }}
           />
           <img
             src={`${process.env.NEXT_PUBLIC_BASE_URL}images/IMG_2435.JPG`}
             style={{
               display: 'block',
-              height: '100%',
+              height: '90%',
               margin: 'auto',
-              width: '100%'
+              width: '80%'
             }}
           />
           <img
             src={`${process.env.NEXT_PUBLIC_BASE_URL}images/IMG_0845.JPEG`}
             style={{
               display: 'block',
-              height: '100%',
+              height: '90%',
               margin: 'auto',
-              width: '100%'
+              width: '80%'
             }}
           />
           <img
             src={`${process.env.NEXT_PUBLIC_BASE_URL}images/IMG_1116.JPEG`}
             style={{
               display: 'block',
-              height: '100%',
+              height: '90%',
               margin: 'auto',
-              width: '100%'
+              width: '80%'
             }}
           />
           <img
             src={`${process.env.NEXT_PUBLIC_BASE_URL}images/IMG_0247.JPEG`}
             style={{
               display: 'block',
-              height: '100%',
+              height: '90%',
               margin: 'auto',
-              width: '100%'
+              width: '80%'
             }}
           />
           <img
             src={`${process.env.NEXT_PUBLIC_BASE_URL}images/IMG_1798.JPG`}
             style={{
               display: 'block',
-              height: '100%',
+              height: '90%',
               margin: 'auto',
-              width: '100%'
+              width: '80%'
             }}
           />
         </Carousel>

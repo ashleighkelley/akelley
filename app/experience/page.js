@@ -1,22 +1,18 @@
 import Navigation from "./../_components/_navigation/navbar"
-import Head from 'next/head'
 
 export default function Experience() {
     return(
       <>
         <Navigation/>
-        <div className="text-blue-grey mx-20 my-5">
-          <Head>
-            <title>Experience</title>
-          </Head>
+        <div className="text-blue-grey mx-5 my-2 lg:mx-20 lg:my-5">
           <div>
             <h1>Summary</h1>
-            <p className="w-4/5">Ashleigh has over 6 years of experience working with clients in analysis, design, development, and customization; 5 years working specifically with Java 8 and Cúram by Merative, 1.5 years with React/NodeJS. </p>
+            <p className="lg:w-4/5">Ashleigh has over 6 years of experience working with clients in analysis, design, development, and customization; 5 years working specifically with Java 8 and Cúram by Merative, 1.5 years with React/NodeJS. </p>
           </div>
 
           <div>
             <h1>Skills</h1>
-            <ul className="columns-2 list-disc list-inside w-3/4">
+            <ul className="columns-2 list-disc list-inside lg:w-3/4">
               <li>Java EE, JavaScript, React, Node.js, Next.js, REST APIs</li>
               <li>Oracle and MS SQL Server relational databases</li>
               <li>Source control via Git and TortoiseSVN</li>

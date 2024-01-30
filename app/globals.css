@@ -32,3 +32,13 @@ h2 {
   font-size: 110%;
   padding-top:0.5rem;
 }
+
+.tableContainer {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.carousel-item{
+  max-width: 230px;
+  min-width:230px;
+}
