@@ -5,10 +5,11 @@ import Scrobbles from "../_components/_carousels/music"
 
 export default async function Interests() {
 
-  const getAlbums = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}interests/api/scrobbles`);
-  const getRecords = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}interests/api/vinyl`);
+  const scrobblesResponse = await fetch(`http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&period=3month&user=shleeeeigh&api_key=${process.env.LASTFM_API_KEY}&format=json`);
+  const scrobblesData = await scrobblesResponse.json();
 
-  const [albumsResponse, recordsResponse] = await Promise.all([getAlbums.json(), getRecords.json()])
+  const vinylResponse = await fetch(`https://api.discogs.com/users/kelleya92/collection/folders/0/releases`);
+  const vinylData = await vinylResponse.json();
 
   return(
     <>
@@ -17,8 +18,8 @@ export default async function Interests() {
         <div className="pt-5">
           <p>Ashleigh has a profound passion for music, encompassing a diverse range of interests within the realm. Since her teenage years she has dabbled in electric and acoustic guitar, appreciating even the technical aspects of pickup installation and hand-wiring of custom guitar pedals. Additionally, she enjoys attending live shows and collecting memorabilia such as tour posters and vinyl records. During her college years, Ashleigh further immersed herself in the musical world by taking on the role of DJ and music director of the student-run radio station, sharing her eclectic taste and fostering a sense of community through the airwaves.</p>
         </div>
-        <Scrobbles data={albumsResponse.data.topalbums} />
-        <Vinyl data={recordsResponse.data.releases}/>
+        <Scrobbles data={scrobblesData.topalbums} />
+        <Vinyl data={vinylData.releases}/>
 
         <div className="pt-5">
           <p>Ashleigh has two rescue dogs - Cooper (adopted 2014) and Luna (adopted 2022) and enjoys taking them on walks, hikes, and trips to the beach.</p>
