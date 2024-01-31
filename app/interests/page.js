@@ -5,13 +5,10 @@ import Scrobbles from "../_components/_carousels/music"
 
 export default async function Interests() {
 
-  console.log(`${process.env.NEXT_PUBLIC_BASE_URL}interests/api/scrobbles`);
   const getAlbums = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}interests/api/scrobbles`);
-  const albumsResponse = await getAlbums.json();
-
-  console.log(`${process.env.NEXT_PUBLIC_BASE_URL}interests/api/vinyl`);
   const getRecords = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}interests/api/vinyl`);
-  const recordsResponse = await getRecords.json();
+
+  const [albumsResponse, recordsResponse] = await Promise.all([getAlbums.json(), getRecords.json()])
 
   return(
     <>
