@@ -3,6 +3,7 @@ import React from "react";
 import Carousel from 'react-multi-carousel';
 import {Accordion, AccordionItem} from "@nextui-org/react";
 import Link from 'next/link'
+import Image from 'next/image';
 
 const Scrobbles = (albums) => {
   const accordionStyling = {
@@ -62,14 +63,11 @@ const Scrobbles = (albums) => {
           {albums.data.album.map(({mbid, artist, url, name, image}) => {
             return(
               <Link href={url} key={mbid}>
-                <img
+                <Image 
                   src={image[2]['#text']}
-                  style={{
-                    display: 'block',
-                    height: '100%',
-                    margin: 'auto',
-                    width: '100%'
-                  }}
+                  width={200}
+                  height={200}
+                  alt={name}
                 />
               </Link>                
             )

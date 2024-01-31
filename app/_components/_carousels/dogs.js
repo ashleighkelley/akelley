@@ -1,6 +1,7 @@
 'use client'
 import Carousel from 'react-multi-carousel';
 import {Accordion, AccordionItem} from "@nextui-org/react";
+import Image from 'next/image';
 
 const Dogs = () => {
   const accordionStyling = {
@@ -21,17 +22,14 @@ const Dogs = () => {
           arrows
           centerMode={false}
           className=""
-          containerClass="container"
-          draggable
-          keyBoardControl
+          containerClass="container-with-dots"
           minimumTouchDrag={80}
           renderArrowsWhenDisabled={false}
-          renderButtonGroupOutside={false}
           renderDotsOutside={false}
           responsive={{
             desktop: {
               breakpoint: {
-                max: 3000,
+                max: 3500,
                 min: 1024
               },
               items: 3
@@ -58,68 +56,47 @@ const Dogs = () => {
           slidesToSlide={1}
           swipeable
         >
-          <img
+          <Image 
             src={`${process.env.NEXT_PUBLIC_BASE_URL}images/IMG_1085.JPEG`}
-            style={{
-              display: 'block',
-              height: '90%',
-              margin: 'auto',
-              width: '80%'
-            }}
+            width={350}
+            height={350}
+            alt="Coop at the beach"
           />
-          <img
+          <Image 
             src={`${process.env.NEXT_PUBLIC_BASE_URL}images/IMG_1033.JPEG`}
-            style={{
-              display: 'block',
-              height: '90%',
-              margin: 'auto',
-              width: '80%'
-            }}
+            width={350}
+            height={350}
+            alt="Luna at the park"
           />
-          <img
+          <Image 
             src={`${process.env.NEXT_PUBLIC_BASE_URL}images/IMG_2435.JPG`}
-            style={{
-              display: 'block',
-              height: '90%',
-              margin: 'auto',
-              width: '80%'
-            }}
+            width={350}
+            height={350}
+            alt="Coop on a hike"
           />
-          <img
+          <Image 
             src={`${process.env.NEXT_PUBLIC_BASE_URL}images/IMG_0845.JPEG`}
-            style={{
-              display: 'block',
-              height: '90%',
-              margin: 'auto',
-              width: '80%'
-            }}
+            width={350}
+            height={350}
+            alt="Luna at the beach"
           />
-          <img
+          <Image 
             src={`${process.env.NEXT_PUBLIC_BASE_URL}images/IMG_1116.JPEG`}
-            style={{
-              display: 'block',
-              height: '90%',
-              margin: 'auto',
-              width: '80%'
-            }}
+            width={350}
+            height={350}
+            alt="Coop swimming"
           />
-          <img
+          <Image 
             src={`${process.env.NEXT_PUBLIC_BASE_URL}images/IMG_0247.JPEG`}
-            style={{
-              display: 'block',
-              height: '90%',
-              margin: 'auto',
-              width: '80%'
-            }}
+            width={350}
+            height={350}
+            alt="Luna on a walk"
           />
-          <img
+          <Image 
             src={`${process.env.NEXT_PUBLIC_BASE_URL}images/IMG_1798.JPG`}
-            style={{
-              display: 'block',
-              height: '90%',
-              margin: 'auto',
-              width: '80%'
-            }}
+            width={350}
+            height={350}
+            alt="Baby Coop"
           />
         </Carousel>
       </AccordionItem>
