@@ -1,4 +1,3 @@
-
 import Navigation from "./../_components/_navigation/navbar"
 import Dogs from "./../_components/_carousels/dogs"
 import Vinyl from "../_components/_tabels/vinyl"
@@ -8,7 +7,6 @@ export default async function Interests() {
 
   const getAlbums = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}interests/scrobbles/api/albums`);
   const albumsResponse = await getAlbums.json();
-  //console.log(albumsResponse.data.topalbums.album[0].image[0]['#text']);
 
   const getRecords = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}interests/vinyl/api/records`);
   const recordsResponse = await getRecords.json();
