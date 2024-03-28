@@ -27,15 +27,15 @@ export default function Experience() {
 
             <h2>December 2017 - Present, Software Engineer - Merative (Previously IBM Watson Health)</h2>
             <ul className="list-disc list-inside indent-4">
-              <li>Supporting implementation of Cúram by Merative V7 projects and upgrades to V8, comprised of a React front end communicating with a Java backend through REST APIs</li>
-              <li>Documenting and implementing technical designs for batch processes and interfacing with external government systems</li>
+              <li>Implementation and development of React, Node.JS and Java 8 based web applications utilizing REST APIs</li>
+              <li>Database table modeling, writing of SQL queries and scripts</li>
+              <li>Design and development of batch processes interfacing with external government systems</li>
               <li>Developing automated Junit test suites to ensure basic functionality, lowering the amount of necessary manual testing </li>
               <li>Writing and executing test cases for Quality Assurance</li>
-              <li>Hosting knowledge transfer sessions</li>
               <li>Supporting pursuit of new business by providing engineering estimates for proposal bids and working on proofs-of-concept</li>
-              <li>Mentoring new hires through the Cúram certification process</li>
-              <li>Running daily defect triage meetings with the client business and technical teams</li>
-              <li>Led development of a hackathon project integrating the AWS Textract OCR solution with the Cúram product as a potential fix for a client bottleneck </li>
+              <li>Mentoring new hires and junior developers, hosting knowledge transfer sessions</li>
+              <li>Running daily defect triage meetings with client, business, and technical teams</li>
+              <li>Led development of multiple hackathon projects providing creative solutions to enhance our product with the use of AI tools provided by AWS and OpenAI</li>
             </ul>
 
             <h2>January 2016 –  December 2017, Associate Programmer Analyst - DXC Technology</h2>
